@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>    
-   <link rel="stylesheet" type="text/css" href="style.css">
-   
-<body>
-    <h1>Tic Tac Toe</h1>
-<table>
+
+<html>
+<link rel="stylesheet" href="style.css">
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+  <script src="script.js"></script>
+
+
+  <header>
+  <h1>TIC TAC TOE</h1>
+  </header>
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <table>
   <tr>
-    <td></td>
-    <td class="vert"></td>
-    <td></td>
+  <td><input type="button" id="1" onclick="draw(1)" value=""/></td>
+  <td><input type="button" id="2" onclick="draw(2)" value=""/></td>
+  <td><input type="button" id="3" onclick="draw(3)" value=""/></td>
   </tr>
   <tr>
-    <td class="hori"></td>
-    <td class="vert hori"></td>
-    <td class="hori"></td>
+  <td><input type="button" id="4" onclick="draw(4)" value=""/></td>
+  <td><input type="button" id="5" onclick="draw(5)" value=""/></td>
+  <td><input type="button" id="6" onclick="draw(6)" value=""/></td>
   </tr>
   <tr>
-    <td></td>
-    <td class="vert"></td>
-    <td></td>
+  <td><input type="button" id="7" onclick="draw(7)" value=""/></td>
+  <td><input type="button" id="8" onclick="draw(8)" value=""/></td>
+  <td><input type="button" id="9" onclick="draw(9)" value=""/></td>
   </tr>
-</table>
+  </table>
+
+  <button onclick="reset()">Reset</button>
+
+  <section align="center" id="popup">
+  <p id="text">text</p>
+  <button id="popupbutton" onclick="reset()">Ok</button>
+  </section>
+
+  <section id="overlay"></section>
+
   </body>
 </html>
