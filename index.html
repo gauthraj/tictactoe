@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 
 <html>
-<link rel="stylesheet" href="style.css">
+
   <head>
-    <script src="script.js"></script>
     <title>Tic Tac Toe</title>
     <meta charset="UTF-8">
   </head>
 
   <body>
-  
+  <script src="script.js"></script>
 
 
   <header>
@@ -22,27 +21,27 @@
 
   <table>
   <tr>
-  <td><input type="button" id="1" onclick="draw(1)" value=""/></td>
-  <td><input type="button" id="2" onclick="draw(2)" value=""/></td>
-  <td><input type="button" id="3" onclick="draw(3)" value=""/></td>
+  <td><input type="button" id="1" onclick="xoo(1)" value=""/></td>
+  <td><input type="button" id="2" onclick="xoo(2)" value=""/></td>
+  <td><input type="button" id="3" onclick="xoo(3)" value=""/></td>
   </tr>
   <tr>
-  <td><input type="button" id="4" onclick="draw(4)" value=""/></td>
-  <td><input type="button" id="5" onclick="draw(5)" value=""/></td>
-  <td><input type="button" id="6" onclick="draw(6)" value=""/></td>
+  <td><input type="button" id="4" onclick="xoo(4)" value=""/></td>
+  <td><input type="button" id="5" onclick="xoo(5)" value=""/></td>
+  <td><input type="button" id="6" onclick="xoo(6)" value=""/></td>
   </tr>
   <tr>
-  <td><input type="button" id="7" onclick="draw(7)" value=""/></td>
-  <td><input type="button" id="8" onclick="draw(8)" value=""/></td>
-  <td><input type="button" id="9" onclick="draw(9)" value=""/></td>
+  <td><input type="button" id="7" onclick="xoo(7)" value=""/></td>
+  <td><input type="button" id="8" onclick="xoo(8)" value=""/></td>
+  <td><input type="button" id="9" onclick="xoo(9)" value=""/></td>
   </tr>
   </table>
 
-  <button onclick="reset()">Reset</button>
+  <button onclick="zuruecksetzen()">Reset</button>
 
   <section align="center" id="popup">
   <p id="text">text</p>
-  <button id="popupbutton" onclick="reset()">Ok</button>
+  <button id="popupbutton" onclick="zuruecksetzen()">Ok</button>
   </section>
 
   <section id="overlay"></section>
